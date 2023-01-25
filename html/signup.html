@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta name="description" content="Dating website">
+    <meta name="keywords" content="Date, match, love, amour, hob, mariage, zawaej , sohba , amis, friends, bnet , wled">
+    <meta name="author" content="MATCHINI">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="C:\Users\leghrab\Desktop\matchini\js\testSignup.js"></script>
+</head>
+<body>
+<header> 
+        <div class="nav-bar">
+             <img src="../image/Logo.png" alt="logo" class="logo">  
+            <nav>
+                <ul>
+                  <li><a href="../index.html" class="Home">Home</a></li>
+                  <li><a href="#" class="rest-menu">About us</a></li>
+                  <li><a href="#" class="rest-menu">Sign up</a></li>
+                </ul>
+          </div>
+            </nav>
+        </header>
+        <section>
+        
+            <form name="sign-up" method="POST" action="#" onsubmit="return verif()">
+                <fieldset>
+                    <legend>Sign up</legend>
+                <table class="table-signup">
+                <tr>
+                    <td>
+                        <label for="email">Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" name="mail" id="email">
+                    </td> 
+                    <td>
+                        <label for="moovies-taste">Movies taste: </label>
+                        <select name="moovies-taste" id="moovies-taste">
+                            <option value="Horror">Horror</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Action" selected>Action</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Science fiction">Science fiction</option>
+                            <option value="fantasy" >fantasy</option>
+                            </select> 
+                        </td>
+                        <td>
+                          <label for="fav-movies">Favourite movie: </label>  
+                          <input type="text" name="fav-movie" id="fav-movie">
+                        </td>
+                        <td>
+                            <label for="date">date of birth  </label>  
+                            <input type="date" name="date" id="date">
+                        </td>
+               </tr>
+               <tr>
+                <td>
+                    <label for="user">Username:</label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="user" id="user">
+                </td> 
+                <td>
+                    <label for="series-taste">Series taste: </label>&nbsp;
+                    <select name="series-taste" id="series-taste" >
+                        <option value="Horror">Horror</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Action" selected>Action</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Romance" >Romance</option>
+                        <option value="Science fiction">science fiction</option>
+                        <option value="fantasy" >fantasy</option>
+                        </select> 
+                    </td>
+                    <td>
+                        <label for="fav-serie">Favourite Serie: </label> &nbsp; 
+                        <input type="text" name="fav-serie" id="fav-serie">
+                      </td>
+                      <td>
+                          <label for="fav-color">Favourite color: </label>  &nbsp;&nbsp;&nbsp;<br>
+                          <input type="color" name="fav-color" id="fav-color">
+                      </td>
+               </tr>
+               <tr>
+                <td>
+                   <label for="pwd">Password:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="password" name="pwd" id="pwd">
+                </td>
+                <td>
+                    <label for="music-taste">Music taste: </label>&nbsp;
+                    <select name="series-taste" id="music-taste">
+                        <option value="Rap">Rap</option>
+                        <option value="Hip hop" selected>Hip hop</option>
+                        <option value="Rock" >Rock</option>
+                        <option value="Soul">Soul</option>
+                        <option value="Reggae" >Reggae</option>
+                        <option value="R&B" >R&B</option>
+                        <option value="fantasy" >fantasy</option>
+                        </select> 
+                    </td>
+                    <td>
+                        <label for="fav-song">Favourite song: </label> &nbsp; 
+                        <input type="text" name="fav-song" id="fav-song">
+                      </td> 
+                      <td>
+                        <label for="astro">Astrology signs: </label>&nbsp;&nbsp;
+                        <select name="astro" id="astro">
+                                <option value="Aries"  >♈Aries</option>
+                                <option value="Taurus" selected>♉Taurus</option>
+                                <option value="Gemini" >♊Gemini</option>
+                                <option value="Cancer" >♋Cancer</option>
+                                <option value="Leo">♌Leo</option>
+                                <option value="Virgo"  >♍Virgo </option>
+                                <option value="Libra" >♎Libra</option>
+                                <option value="Scorpius"  >♏Scorpius </option>
+                                <option value="Sagittarius" >♐Sagittarius</option>
+                                <option value="Capricornus">♑Capricornus</option>
+                                <option value="Aquarius"  >♒Aquarius</option>
+                                <option value=" Pisces"  >♓Pisces</option>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="pwdc">Check Password:  </label>
+                            <input type="password" name="pwdc" id="pwdc">
+                        </td>
+                        <td>
+                            <label for="story">Tell us about yourself</label>
+                            <textarea id="story" name="story" rows="5" cols="60" ></textarea>
+                        </td>
+                         
+                        <td><button type="submit" name="submit">Create</button></td>
+                        <td><button type="reset" name="reset">Reset</button></td>
+                        
+                      </tr>
+
+            
+                </table>
+            </fieldset>
+            </form>
+     
+         </section>
+
+         <footer>
+        <center><p>Copyright &copy; 2022 site réalisé par : Yacine Hammi:Mohamed Ali Saidi Groupe 6:<span>Projet web</span></p></center>
+         
+       </footer>
+    </body>
+</html>
